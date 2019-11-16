@@ -1,0 +1,1258 @@
+{
+  "Version": 76,
+  "Individuals": [
+    {
+      "Name": "Adult",
+      "Seed": 270861718,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "Molecules": [
+        {
+          "Name": "CYP3A4",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.0041682898325
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.00078691079081
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.0053603428126
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00042695753798
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.0727697702
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP3A4"
+          }
+        },
+        {
+          "Name": "CYP1A2",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Gonads",
+              "Value": 0.00029559748428
+            },
+            {
+              "Name": "Kidney",
+              "Value": 4.4025157233E-06
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 2.4947589099E-05
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP1A2"
+          }
+        }
+      ]
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Ondansetron",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Albumin",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": 1.59,
+              "Unit": "Log Units"
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Measurement",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.27
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 0.3551,
+              "Unit": "mg/l"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.0
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Base",
+          "Pka": 7.34,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP1A2",
+          "Species": "Human",
+          "Molecule": "CYP1A2",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.13,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP3A4",
+          "Species": "Human",
+          "Molecule": "CYP3A4",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.195,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "GlomerularFiltration",
+          "DataSource": "GFR",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "GFR fraction",
+              "Value": 0.71
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - PK-Sim Standard",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 293.37,
+          "Unit": "g/mol"
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "IVinf_Blake_1993",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 8.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IVinf_Colthup_1991",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 8.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 15.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IVinf_VanDenBerg_2000",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 24.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 20.0,
+          "Unit": "min"
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "IVsim-Adult-Blake-1993",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Blake_1993_Adult_IVinf"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IVinf_Blake_1993|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 5.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Ondansetron|Blood/Plasma concentration ratio",
+          "Value": 0.83,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Ondansetron",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "CYP1A2-CYP1A2",
+              "MoleculeName": "CYP1A2"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IVinf_Blake_1993"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Blake-1993-Ondansetron-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Blake-1993|Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Blake_1993_Adult_IVinf-Ondansetron-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Blake_1993_Adult_IVinf|Time ",
+              "Y": "Blake_1993_Adult_IVinf|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Ondansetron_vSnapShot1\nIVsim-Adult-Blake-1993\n2019-10-26 18:42"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-Colthup-1991",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Colthup-1991-Adult-IV",
+        "fraction_excreted_urine-Tlast16"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 16.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IVinf_Colthup_1991|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 15.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Ondansetron|Blood/Plasma concentration ratio",
+          "Value": 0.83,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Ondansetron|Fraction excreted to urine"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Ondansetron",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "CYP1A2-CYP1A2",
+              "MoleculeName": "CYP1A2"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IVinf_Colthup_1991"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Colthup-1991-Ondansetron-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Colthup-1991|Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Colthup-1991-Adult-IV-Ondansetron-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Colthup-1991-Adult-IV|Time ",
+              "Y": "Colthup-1991-Adult-IV|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "IVsim-Adult-Colthup-1991-Ondansetron-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "IVsim-Adult-Colthup-1991|Organism|Kidney|Urine|Ondansetron|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "fraction_excreted_urine-Tlast16-Ondansetron-Kidney-Urine-Fraction",
+              "X": "fraction_excreted_urine-Tlast16|Time ",
+              "Y": "fraction_excreted_urine-Tlast16|ObservedData|Kidney|Urine|Ondansetron|Fraction",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Ondansetron_vSnapShot1\nIVsim-Adult-Colthup-1991\n2019-10-26 18:48"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-VanDenBerg-2000",
+      "Model": "4Comp",
+      "ObservedData": [
+        "VanDenBerg_2000_Adult_IV",
+        "fraction_excreted_urine"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IVinf_VanDenBerg_2000|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 20.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Ondansetron|Blood/Plasma concentration ratio",
+          "Value": 0.83,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Ondansetron|Fraction excreted to urine"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Ondansetron",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "CYP1A2-CYP1A2",
+              "MoleculeName": "CYP1A2"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IVinf_VanDenBerg_2000"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-VanDenBerg-2000-Ondansetron-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-VanDenBerg-2000|Organism|PeripheralVenousBlood|Ondansetron|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "VanDenBerg_2000_Adult_IV-Ondansetron-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "VanDenBerg_2000_Adult_IV|Time ",
+              "Y": "VanDenBerg_2000_Adult_IV|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "IVsim-Adult-VanDenBerg-2000-Ondansetron-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "IVsim-Adult-VanDenBerg-2000|Organism|Kidney|Urine|Ondansetron|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "fraction_excreted_urine-Ondansetron-Kidney-Urine-Fraction",
+              "X": "fraction_excreted_urine|Time ",
+              "Y": "fraction_excreted_urine|ObservedData|Kidney|Urine|Ondansetron|Fraction",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Ondansetron_vSnapShot1\nIVsim-Adult-VanDenBerg-2000\n2019-10-26 18:54"
+        }
+      ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Blake_1993_Adult_IVinf",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Ondansetron\\Observed_data\\Blake_1993_Adult_IVinf.xlsx.Nominal"
+        },
+        {
+          "Name": "File",
+          "Value": "Blake_1993_Adult_IVinf"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Nominal"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Ondansetron"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Blake_1993_Adult_IVinf|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2019-10-26T18:13:08.2648185-04:00",
+            "Source": "Blake_1993_Adult_IVinf.Nominal.Conc [ng/mL]",
+            "MolWeight": 293.37
+          },
+          "Values": [
+            0.113114454,
+            0.04126355,
+            0.0336625427,
+            0.0230679139,
+            0.0166285057,
+            0.0126119955,
+            0.00999078,
+            0.006554468,
+            0.00148477638
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Blake_1993_Adult_IVinf|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2019-10-26T18:13:08.2648185-04:00",
+          "Source": "Blake_1993_Adult_IVinf.Nominal.Time [h]"
+        },
+        "Values": [
+          0.329999983,
+          1.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          24.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "fraction_excreted_urine-Tlast16",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Ondansetron\\Observed_data\\fraction_excreted_urine-Tlast16.xlsx.Sheet1"
+        },
+        {
+          "Name": "File",
+          "Value": "fraction_excreted_urine-Tlast16"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Ondansetron"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Kidney"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction",
+          "QuantityInfo": {
+            "Name": "Fraction",
+            "Path": "fraction_excreted_urine-Tlast16|ObservedData|Kidney|Urine|Ondansetron|Fraction"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2019-10-26T18:39:22.0609304-04:00",
+            "Source": "fraction_excreted_urine-Tlast16.Sheet1.Fraction",
+            "MolWeight": 293.37
+          },
+          "Values": [
+            0.05
+          ],
+          "Dimension": "Dimensionless"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "fraction_excreted_urine-Tlast16|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2019-10-26T18:39:22.0609304-04:00",
+          "Source": "fraction_excreted_urine-Tlast16.Sheet1.Time [h]"
+        },
+        "Values": [
+          16.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Colthup-1991-Adult-IV",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Ondansetron\\Observed_data\\Colthup-1991-Adult-IVPO.xlsx.Nominal-IV"
+        },
+        {
+          "Name": "File",
+          "Value": "Colthup-1991-Adult-IVPO"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Nominal-IV"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Ondansetron"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Colthup-1991-Adult-IV|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2019-10-26T18:46:20.3611138-04:00",
+            "Source": "Colthup-1991-Adult-IVPO.Nominal-IV.Conc [ng/mL]",
+            "MolWeight": 293.37
+          },
+          "Values": [
+            0.0291235577,
+            0.06658425,
+            0.0460354239,
+            0.04210649,
+            0.03433748,
+            0.03100675,
+            0.02835903,
+            0.0252819285,
+            0.0203545075,
+            0.0113249216,
+            0.007625885,
+            0.00507013965,
+            0.00328640221,
+            0.00218488486,
+            0.001185093
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Colthup-1991-Adult-IV|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2019-10-26T18:46:20.3611138-04:00",
+          "Source": "Colthup-1991-Adult-IVPO.Nominal-IV.Time [h]"
+        },
+        "Values": [
+          0.2,
+          0.4,
+          0.55,
+          0.840000033,
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "VanDenBerg_2000_Adult_IV",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Ondansetron\\Observed_data\\VanDenBerg_2000_Adult_IV.xlsx.Nominal"
+        },
+        {
+          "Name": "File",
+          "Value": "VanDenBerg_2000_Adult_IV"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Nominal"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Ondansetron"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "VanDenBerg_2000_Adult_IV|ObservedData|Peripheral Venous Blood|Plasma|Ondansetron|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2019-10-26T18:50:11.9513622-04:00",
+            "Source": "VanDenBerg_2000_Adult_IV.Nominal.Conc [ng/mL]",
+            "MolWeight": 293.37
+          },
+          "Values": [
+            3.992165,
+            0.402003378,
+            0.13580966,
+            0.101401053,
+            0.08580947,
+            0.07571026,
+            0.0614498034,
+            0.04783651,
+            0.03285623,
+            0.0175676942,
+            0.0131167676,
+            0.006187899
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "VanDenBerg_2000_Adult_IV|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2019-10-26T18:50:11.9513622-04:00",
+          "Source": "VanDenBerg_2000_Adult_IV.Nominal.Time [h]"
+        },
+        "Values": [
+          0.083,
+          0.25,
+          0.5,
+          0.75,
+          1.5,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          16.0,
+          24.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "fraction_excreted_urine",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Ondansetron\\Observed_data\\fraction_excreted_urine.xlsx.Sheet1"
+        },
+        {
+          "Name": "File",
+          "Value": "fraction_excreted_urine"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Ondansetron"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Kidney"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction",
+          "QuantityInfo": {
+            "Name": "Fraction",
+            "Path": "fraction_excreted_urine|ObservedData|Kidney|Urine|Ondansetron|Fraction"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2019-10-26T18:54:04.4749523-04:00",
+            "Source": "fraction_excreted_urine.Sheet1.Fraction",
+            "MolWeight": 293.37
+          },
+          "Values": [
+            0.05
+          ],
+          "Dimension": "Dimensionless"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "fraction_excreted_urine|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2019-10-26T18:54:04.4749523-04:00",
+          "Source": "fraction_excreted_urine.Sheet1.Time [h]"
+        },
+        "Values": [
+          24.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ]
+}

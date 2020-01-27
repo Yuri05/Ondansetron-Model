@@ -1,0 +1,37 @@
+{
+  "Project": "Ondansetron",
+  "SnapshotFile": "C:/Egnyte/Private/esther.yun/Model Qual/Ondansetron-Evaluation/Ondansetron.json",
+  "OutputFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input",
+  "ObservedDataFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input\\ObservedData",
+  "InputsFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input\\Inputs",
+  "MappingFile": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input\\temp\\Ondansetron\\mapping.json",
+  "TempFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input\\temp\\Ondansetron",
+  "ReportConfigurationFile": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Ondansetron-Evaluation\\Evaluation\\re_input\\report-configuration-plan.json",
+  "SimulationPlots": [
+    {
+      "Simulation": "IVsim-Adult-Blake-1993",
+      "Project": "Ondansetron",
+      "SectionId": 33
+    },
+    {
+      "Simulation": "IVsim-Adult-Colthup-1991",
+      "Project": "Ondansetron",
+      "SectionId": 33
+    },
+    {
+      "Simulation": "IVsim-Adult-VanDenBerg-2000",
+      "Project": "Ondansetron",
+      "SectionId": 33
+    }
+  ],
+  "Inputs": [
+    {
+      "Type": "Compound",
+      "Name": "Ondansetron",
+      "Project": "Ondansetron",
+      "SectionId": 31
+    }
+  ],
+  "BuildingBlocks": [],
+  "SimulationParameters": []
+}

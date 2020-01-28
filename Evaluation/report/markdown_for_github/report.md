@@ -185,9 +185,9 @@ Below you find the goodness-of-fit visual diagnostic plots for the PBPK model pe
 The first plot shows observed versus simulated plasma concentration, the second weighted residuals versus time. 
 
 
-![001_plotGOFMergedPredictedVsObserved.png](images\003_3_Results_and_Discussion\002_3_2_Diagnostics_Plots\001_plotGOFMergedPredictedVsObserved.png)
+![001_plotGOFMergedPredictedVsObserved.png](images/003_3_Results_and_Discussion/002_3_2_Diagnostics_Plots/001_plotGOFMergedPredictedVsObserved.png)
 
-![002_plotGOFMergedResidualsOverTime.png](images\003_3_Results_and_Discussion\002_3_2_Diagnostics_Plots\002_plotGOFMergedResidualsOverTime.png)
+![002_plotGOFMergedResidualsOverTime.png](images/003_3_Results_and_Discussion/002_3_2_Diagnostics_Plots/002_plotGOFMergedResidualsOverTime.png)
 
 GMFE = 1.442728 
 
@@ -195,11 +195,11 @@ GMFE = 1.442728
 Simulated versus observed concentration-time profiles of all data listed in [Section 2.2.2](#2.2.2	Clinical Data) are presented below.
 
 
-![003_plotTimeProfile.png](images\003_3_Results_and_Discussion\003_3_3__Concentration-Time_Profiles\003_plotTimeProfile.png)
+![003_plotTimeProfile.png](images/003_3_Results_and_Discussion/003_3_3__Concentration-Time_Profiles/003_plotTimeProfile.png)
 
-![004_plotTimeProfile.png](images\003_3_Results_and_Discussion\003_3_3__Concentration-Time_Profiles\004_plotTimeProfile.png)
+![004_plotTimeProfile.png](images/003_3_Results_and_Discussion/003_3_3__Concentration-Time_Profiles/004_plotTimeProfile.png)
 
-![005_plotTimeProfile.png](images\003_3_Results_and_Discussion\003_3_3__Concentration-Time_Profiles\005_plotTimeProfile.png)
+![005_plotTimeProfile.png](images/003_3_Results_and_Discussion/003_3_3__Concentration-Time_Profiles/005_plotTimeProfile.png)
 
 ### 3.3.1 Model Building
 
